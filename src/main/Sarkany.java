@@ -34,6 +34,10 @@ public class Sarkany {
         return this.meret;
     }
 
+    public String allapot(){
+        return "A sárkány életereje: "+eletpont+"\nA sárkány eleme: "+elem+"\nA sárkány mérete: "+ meret;
+    }
+    
     
     public void etetes(){
         meret+= 100;
@@ -41,6 +45,10 @@ public class Sarkany {
     
     public void varazslas(String kivantElem){
         this.elem=kivantElem;
+    }
+    
+    public boolean egyformaElem(Sarkany masikSarkany){
+        return this.elem.equals(masikSarkany.elem) ;
     }
     
 }
